@@ -4,10 +4,13 @@
 **Метод для получения строковых данных от пользователя**
 
 string Prompt(string message)
+
 {
+
     Console.Write(message);
     string item = Console.ReadLine();
     return item;
+    
 }
 
 **Метод для вывода на экран массива строковых данных**
