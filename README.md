@@ -3,7 +3,8 @@
 
 **Метод для получения строковых данных от пользователя**
 
-```string Prompt(string message)
+```
+string Prompt(string message)
 
 {
     Console.Write(message);
