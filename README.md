@@ -33,7 +33,7 @@ string[] GetArray()
     int i =0; 
     while (i>= 0)
     {
-        string item = Prompt("Введите значение или нажмите клавишу Q: ");
+        string item = Prompt("Введите элемент массива или нажмите клавишу Q: ");
         if (item.ToLower() == "q") break;
         else 
         {
@@ -70,8 +70,14 @@ string[] LengthElement(string[] arr)
 
 ```
 string[] array = GetArray();
+Console.Write("Ваш массив: \t");
 PrintArray(array);
 string[] array1 = LengthElement(array);
 Console.WriteLine();
+Console.Write("Новый массив: \t");
 PrintArray(array1);
 ```
+
+**Блок-схема**
+
+![](Блок-схема.jpg)
