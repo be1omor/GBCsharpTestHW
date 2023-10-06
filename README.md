@@ -5,7 +5,6 @@
 
 ```
 string Prompt(string message)
-
 {
     Console.Write(message);
     string item = Console.ReadLine();
@@ -15,6 +14,7 @@ string Prompt(string message)
 
 **Метод для вывода на экран массива строковых данных**
 
+```
 void PrintArray(string[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
@@ -22,9 +22,11 @@ void PrintArray(string[] arr)
         Console.Write($"{arr[i]} ");
     }
 }
+```
 
 **Метод для создания массива и заполнение его строковыми данными от пользователя**
 
+```
 string[] GetArray()
 {
     string[] res = new string[] {};
@@ -42,9 +44,11 @@ string[] GetArray()
     }  
     return res;
 }
+```
 
 **Метод который получает некоторый массив строковых данных, проверяет элементы этого массива на количество символов и заполняет новый массив подходящими элементами, в конце возвращает получившийся массив**
 
+```
 string[] LengthElement(string[] arr)
 {
     string[] res = new string[] {};
@@ -60,11 +64,14 @@ string[] LengthElement(string[] arr)
     }
     return res;
 }
+```
 
 **Обращение к методам**
 
+```
 string[] array = GetArray();
 PrintArray(array);
 string[] array1 = LengthElement(array);
 Console.WriteLine();
 PrintArray(array1);
+```
